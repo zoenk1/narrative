@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narrative Project</title>
+    <link rel="stylesheet" href="styles.css" type="text/css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" data-0="transform:translateX(0%)" data-1000="transform: translateX(-600%)">
+        <section>
+            <div class="content">
+                <!-- 1 - Find out princess is missing -->
+                <audio controls autoplay muted>
+                    <source src="audio/audio.mp3" type="audio/mpeg">
+                  </audio>
+                <p>MARIO: Luigi! Bowser stole the princess! We need to go to his castle immediatley!</p>
+                <p>LUIGI: We must go save her!</p>
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <!-- 2 - Embark on journey -->
+                <p>Mario and Luigi set out on their journey to find Princess Peach.</p>
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <!-- 3 - Find castle -->
+                <p>Mario and Luigi finally reach Bowser's Castle, where Princess Peach is being held captive.</p>
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <!-- 4 - See villan -->
+                <p>BOWSER: Well, well, well. Look who decided to show up. Mario and Luigi.</p>
+                <p>MARIO: Bowser, let the Princess go. She doesn't belong here.</p>
+                <p>BOWSER: Oh, but she does. She's my guest, and she's not going anywhere.</p>
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <!-- 5 - Defeat villan -->
+                <p>Mario and Luigi battle Bowser and his minions outside the castle.</p>
+                <p>It's an intense fight, but Mario and Luigi use their skills and teamwork to defeat the enemies.</p>
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <!-- 6 - Save princess -->
+                <p>PRINCESS PEACH: Mario, Luigi, thank you so much for saving me. I was so scared.</p>
+                <p>MARIO: No problem, Princess. That's what we're here for.</p>
+                <p>LUIGI: Let's get out of here before Bowser comes back.</p>    
+            </div>
+        </section>
+        <section>
+            <div class="statement">
+                <!-- 7 - Project Statement -->
+                <h2>Project Statement</h2>
+                <p>This website was a project for a multimedia authoring class project where we were challenged to</p>
+                <p>create a narrative story in which I decided to utilize the program Skrollr.</p>
+                <p>My inspiration for this project was drawn from the iconic Super Mario games.</p>
+                <p>The biggest challenge I faced was creating visually stunning graphics and animations</p>
+                <p>that were both engaging and coherent with the Super Mario theme. Through diligent research and iteration,</p>
+                <p>I was able to overcome these challenges and create a website that effectively captured the essence of</p>
+                <p>Super Mario while showcasing mu technical skills with Skrollr and multimedia authoring.</p>
+                <img src="images/end.jpg" alt="the end">
+            </div>
+        </section>
+    </div>
+
+    
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="skrollr.min.js"></script>
+   
+   
+   
+     <script>
+     
+   
+   
+        /// scroll counter
+        
+         $(window).scroll(function() {
+           var scrollTop = $(window,'html, body').scrollTop();
+           $('#scrollCount').html(scrollTop);
+           });
+   
+   
+      
+   // IMPORTANT FOR SKROLLR - initiates plugin
+       var s = skrollr.init({ // begins object literal after skrollr initiates
+           render: function(data) {
+               if (data.curTop == 6000) {
+                   alert('You reached scroll position 6000!');
+               } // end conditional
+   
+           }  // closes the render function
+       
+       });  // close skrollr init
+   
+   
+       
+   
+   
+    </script>
+
+</body>
+</html>
